@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="5hE-gA-EtD">
-                                <rect key="frame" x="0.0" y="36" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="519480940.06125802">
                                     <!--2017-06-18 12:15:40 +0000-->
                                 </date>
@@ -31,32 +32,39 @@
                                 </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGa-TU-7dc">
-                                <rect key="frame" x="166" y="292" width="42" height="21"/>
+                                <rect key="frame" x="166" y="328" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gxW-fW-HU7">
-                                <rect key="frame" x="103" y="11" width="169" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gxW-fW-HU7">
+                                <rect key="frame" x="47.5" y="36" width="281" height="29"/>
                                 <segments>
                                     <segment title="greg to heb"/>
                                     <segment title="heb to greg"/>
+                                    <segment title="greg to chi"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="pYu-9w-pe8"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gxW-fW-HU7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FxS-O1-h1Q"/>
+                            <constraint firstItem="gxW-fW-HU7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="WMQ-td-vEK"/>
                             <constraint firstAttribute="trailing" secondItem="5hE-gA-EtD" secondAttribute="trailing" id="Xnl-3b-8ua"/>
-                            <constraint firstItem="5hE-gA-EtD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="rvS-MM-D59"/>
                             <constraint firstItem="dGa-TU-7dc" firstAttribute="top" secondItem="5hE-gA-EtD" secondAttribute="bottom" constant="40" id="tla-PL-70m"/>
                             <constraint firstItem="dGa-TU-7dc" firstAttribute="centerX" secondItem="5hE-gA-EtD" secondAttribute="centerX" id="ucT-jk-swT"/>
                             <constraint firstItem="5hE-gA-EtD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w0p-uz-AQh"/>
+                            <constraint firstItem="5hE-gA-EtD" firstAttribute="top" secondItem="gxW-fW-HU7" secondAttribute="bottom" constant="8" id="xBi-58-Yg0"/>
+                            <constraint firstItem="gxW-fW-HU7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="znC-v0-Ao8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="datePicker" destination="5hE-gA-EtD" id="Pvi-8R-Q8Y"/>
                         <outlet property="label2" destination="dGa-TU-7dc" id="zRg-gj-XJU"/>
+                        <outlet property="segmentedControl" destination="gxW-fW-HU7" id="K9u-zD-0eU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
