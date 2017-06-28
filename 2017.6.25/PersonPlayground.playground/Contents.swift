@@ -68,6 +68,22 @@ p.lastname
 
 
 
+/*
+struct Point{
+    var x : Double
+    var y : Double
+    
+    mutating func up(){
+        y += 1
+    }
+}
+
+var p1 = Point(x: 4, y: 4)
+p1.up()
+*/
+
+
+
 
 
 
