@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XvN-SU-foo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--מיקום נוכחי-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutocompleteProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUO-Vp-B3K">
+                                <rect key="frame" x="16" y="36" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5y-fb-WAa">
+                                <rect key="frame" x="161" y="138" width="52" height="30"/>
+                                <state key="normal" title="get info"/>
+                                <connections>
+                                    <action selector="getInfoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nth-Nn-emH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbA-sz-BoX">
+                                <rect key="frame" x="16" y="73" width="343" height="41"/>
+                                <string key="text">address label kjhkjh kubmn bh  kjbkh  jybkbk 
+sdmlksmdf</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nbA-sz-BoX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="0U9-Rb-gIX"/>
+                            <constraint firstItem="jUO-Vp-B3K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="S6S-qX-utT"/>
+                            <constraint firstItem="w5y-fb-WAa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aTv-bV-UiP"/>
+                            <constraint firstAttribute="trailing" secondItem="nbA-sz-BoX" secondAttribute="trailing" constant="16" id="gBx-vf-c2A"/>
+                            <constraint firstItem="jUO-Vp-B3K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="njQ-Fd-23Q"/>
+                            <constraint firstItem="nbA-sz-BoX" firstAttribute="top" secondItem="jUO-Vp-B3K" secondAttribute="bottom" constant="16" id="p8O-Hs-dvw"/>
+                            <constraint firstItem="w5y-fb-WAa" firstAttribute="top" secondItem="nbA-sz-BoX" secondAttribute="bottom" constant="24" id="z4o-JN-MqP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="מיקום נוכחי" image="icon_current" id="9pc-Ox-y6l"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="nbA-sz-BoX" id="Rft-5M-aKn"/>
+                        <outlet property="nameLabel" destination="jUO-Vp-B3K" id="vA4-53-f5d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="-262"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OS0-vE-mnH">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XvN-SU-foo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="pCf-0s-ESu">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wmC-bw-Vb5" kind="relationship" relationship="viewControllers" id="qAt-sd-hoF"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="o4Z-Lg-eB6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TvH-Gs-pfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="90.404797601199405"/>
+        </scene>
+        <!--השלמה אוטומטית-->
+        <scene sceneID="cr8-s8-uD9">
+            <objects>
+                <viewController id="wmC-bw-Vb5" customClass="SecondViewController" customModule="AutocompleteProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gXd-z4-dl8"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfZ-rQ-ovg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p1g-i7-cFl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="insert address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Noc-UV-PSy">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Noc-UV-PSy" firstAttribute="leading" secondItem="p1g-i7-cFl" secondAttribute="leading" constant="16" id="Gwr-PH-mSw"/>
+                            <constraint firstItem="Noc-UV-PSy" firstAttribute="top" secondItem="gXd-z4-dl8" secondAttribute="bottom" constant="16" id="J8T-JR-9p6"/>
+                            <constraint firstAttribute="trailing" secondItem="Noc-UV-PSy" secondAttribute="trailing" constant="16" id="Oju-f0-aJG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="השלמה אוטומטית" image="icon_address" id="moF-05-tUN"/>
+                    <connections>
+                        <outlet property="textField" destination="Noc-UV-PSy" id="Fv4-bg-TmE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0o7-lI-kgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="450"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_address" width="25" height="25"/>
+        <image name="icon_current" width="25" height="25"/>
+    </resources>
+</document>
