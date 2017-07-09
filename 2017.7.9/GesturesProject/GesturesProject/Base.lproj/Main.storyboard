@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6uV-fx-kKC">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rotation-->
+        <scene sceneID="mv9-1q-Lx7">
+            <objects>
+                <viewController id="iiT-kr-krJ" customClass="RotationViewController" customModule="GesturesProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fsX-v3-I3V"/>
+                        <viewControllerLayoutGuide type="bottom" id="5gK-U7-JfH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="90h-e3-534">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="gcC-3v-twB">
+                                <rect key="frame" x="107" y="268" width="200" height="200"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5zJ-Tx-JMe" appends="YES" id="J8q-Mx-cR3"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-star_filled" translatesAutoresizingMaskIntoConstraints="NO" id="vQY-Hs-Cc5">
+                                <rect key="frame" x="8" y="28" width="25" height="25"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-star_filled" translatesAutoresizingMaskIntoConstraints="NO" id="GeP-Tz-HVp">
+                                <rect key="frame" x="65" y="62" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-star_filled" translatesAutoresizingMaskIntoConstraints="NO" id="oH1-yW-jWL">
+                                <rect key="frame" x="119" y="20" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-star_filled" translatesAutoresizingMaskIntoConstraints="NO" id="dQh-ah-ShS">
+                                <rect key="frame" x="170" y="62" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-star_filled" translatesAutoresizingMaskIntoConstraints="NO" id="B2b-hH-qKf">
+                                <rect key="frame" x="221" y="21" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-star_filled" translatesAutoresizingMaskIntoConstraints="NO" id="lhA-k7-YGU">
+                                <rect key="frame" x="278" y="55" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-star_filled" translatesAutoresizingMaskIntoConstraints="NO" id="Mdi-X9-Qpx">
+                                <rect key="frame" x="332" y="13" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-star_filled" translatesAutoresizingMaskIntoConstraints="NO" id="dgM-Ic-Fh1">
+                                <rect key="frame" x="383" y="55" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Aa-wM-1vk">
+                                <rect key="frame" x="165" y="212" width="85" height="30"/>
+                                <state key="normal" title="timer button"/>
+                                <connections>
+                                    <action selector="timerButtonAction:" destination="iiT-kr-krJ" eventType="touchUpInside" id="LME-g1-fDn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vQY-Hs-Cc5" firstAttribute="leading" secondItem="90h-e3-534" secondAttribute="leading" constant="8" id="CXm-uW-w80"/>
+                            <constraint firstItem="8Aa-wM-1vk" firstAttribute="centerX" secondItem="gcC-3v-twB" secondAttribute="centerX" id="DoZ-U3-U95"/>
+                            <constraint firstItem="gcC-3v-twB" firstAttribute="centerX" secondItem="90h-e3-534" secondAttribute="centerX" id="FkP-CM-Rnq"/>
+                            <constraint firstItem="vQY-Hs-Cc5" firstAttribute="top" secondItem="fsX-v3-I3V" secondAttribute="bottom" constant="8" id="LFf-jO-641"/>
+                            <constraint firstItem="gcC-3v-twB" firstAttribute="centerY" secondItem="90h-e3-534" secondAttribute="centerY" id="dZw-y2-rD0"/>
+                            <constraint firstItem="gcC-3v-twB" firstAttribute="top" secondItem="8Aa-wM-1vk" secondAttribute="bottom" constant="26" id="yWo-kE-ADu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rotation" id="VG9-Bl-R6f"/>
+                    <connections>
+                        <outletCollection property="stars" destination="vQY-Hs-Cc5" collectionClass="NSMutableArray" id="wwR-0b-pwk"/>
+                        <outletCollection property="stars" destination="GeP-Tz-HVp" collectionClass="NSMutableArray" id="PLT-tR-mNl"/>
+                        <outletCollection property="stars" destination="oH1-yW-jWL" collectionClass="NSMutableArray" id="Lzm-8m-T0Y"/>
+                        <outletCollection property="stars" destination="dQh-ah-ShS" collectionClass="NSMutableArray" id="wrk-uR-XuF"/>
+                        <outletCollection property="stars" destination="B2b-hH-qKf" collectionClass="NSMutableArray" id="ufg-8p-6Gh"/>
+                        <outletCollection property="stars" destination="lhA-k7-YGU" collectionClass="NSMutableArray" id="hes-DQ-e4h"/>
+                        <outletCollection property="stars" destination="Mdi-X9-Qpx" collectionClass="NSMutableArray" id="GTp-5k-FEu"/>
+                        <outletCollection property="stars" destination="dgM-Ic-Fh1" collectionClass="NSMutableArray" id="jDj-Qe-eYU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wd-H9-yIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="5zJ-Tx-JMe">
+                    <connections>
+                        <action selector="rotationAction:" destination="iiT-kr-krJ" id="Vbu-RU-Uii"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1075" y="-576"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GesturesProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgF-xU-r0s">
+                                <rect key="frame" x="16" y="36" width="382" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="61i-bB-qvf"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="g5o-4I-v9f" appends="YES" id="alb-BF-UxH"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qgF-xU-r0s" secondAttribute="trailing" constant="16" id="YmJ-E9-fP3"/>
+                            <constraint firstItem="qgF-xU-r0s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="evT-zX-9oi"/>
+                            <constraint firstItem="qgF-xU-r0s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="ziD-Sz-aKj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="SMz-RO-OOo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="g5o-4I-v9f">
+                    <connections>
+                        <action selector="doubleTapAction:" destination="BYZ-38-t0r" id="tkM-n4-RXK"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="k2w-ou-JvJ">
+            <objects>
+                <viewController id="1YG-MB-IfG" customClass="PanViewController" customModule="GesturesProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yMc-qy-ujG"/>
+                        <viewControllerLayoutGuide type="bottom" id="YGY-Cw-kat"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZLG-Qs-LSM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="VKm-oy-ND4">
+                                <rect key="frame" x="157" y="318" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iLP-rZ-wnJ" appends="YES" id="uA1-xE-zcS"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="KUo-US-v9V">
+                                <rect key="frame" x="36" y="46" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VKm-oy-ND4" firstAttribute="centerY" secondItem="ZLG-Qs-LSM" secondAttribute="centerY" id="Meo-sB-YcU"/>
+                            <constraint firstItem="VKm-oy-ND4" firstAttribute="centerX" secondItem="ZLG-Qs-LSM" secondAttribute="centerX" id="Xcf-OS-Sl0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Y1M-tk-Jq6"/>
+                    <connections>
+                        <outlet property="redBallImageView" destination="KUo-US-v9V" id="fXL-YN-BcP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="668-q0-g8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="iLP-rZ-wnJ">
+                    <connections>
+                        <action selector="panAction:" destination="1YG-MB-IfG" id="eHF-m5-cZr"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1050" y="883"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dp9-oj-ILo">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6uV-fx-kKC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bed-on-Axr">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iiT-kr-krJ" kind="relationship" relationship="viewControllers" id="Snq-cG-dfl"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="XWU-hk-5Ak"/>
+                        <segue destination="1YG-MB-IfG" kind="relationship" relationship="viewControllers" id="KBT-9V-BbR"/>
+                        <segue destination="pz0-jV-KKL" kind="relationship" relationship="viewControllers" id="WQ5-8b-X0j"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="piL-Wu-1Vd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="VKu-s8-fe1">
+            <objects>
+                <viewController id="pz0-jV-KKL" customClass="PinchViewController" customModule="GesturesProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ws3-X0-9uT"/>
+                        <viewControllerLayoutGuide type="bottom" id="UaA-99-8HR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZWa-8f-wer">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JmB-eP-TQZ">
+                                <rect key="frame" x="87" y="248" width="240" height="240"/>
+                                <color key="backgroundColor" red="0.2784313725" green="0.58823529409999997" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="5Hx-8d-4ZV"/>
+                                    <constraint firstAttribute="width" constant="240" id="zns-8K-ZI7"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Uqw-uH-O2F" appends="YES" id="HQR-4p-co5"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JmB-eP-TQZ" firstAttribute="centerX" secondItem="ZWa-8f-wer" secondAttribute="centerX" id="5ud-cq-FkJ"/>
+                            <constraint firstItem="JmB-eP-TQZ" firstAttribute="centerY" secondItem="ZWa-8f-wer" secondAttribute="centerY" id="Bic-zM-HHJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="m76-oH-gqd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gup-4I-Cif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="Uqw-uH-O2F">
+                    <connections>
+                        <action selector="pinchAction:" destination="pz0-jV-KKL" id="oNx-gT-NYY"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-36.231884057971016" y="903.26086956521749"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball" width="100" height="100"/>
+        <image name="icons8-star_filled" width="25" height="25"/>
+        <image name="star" width="200" height="200"/>
+    </resources>
+</document>
