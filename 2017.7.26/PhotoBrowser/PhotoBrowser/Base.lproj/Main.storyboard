@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mk-DA-rrG">
+                                <rect key="frame" x="130" y="36" width="114" height="30"/>
+                                <state key="normal" title="Download image"/>
+                                <connections>
+                                    <action selector="downloadImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7LW-4o-T8d"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OOE-Gr-vLD">
+                                <rect key="frame" x="16" y="82" width="343" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="qoC-4R-V0p"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Vh9-sw-YD5" appends="YES" id="Su6-XE-9aF"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0N-Pz-PUy">
+                                <rect key="frame" x="142.5" y="226" width="90" height="30"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Gallery"/>
+                                <connections>
+                                    <action selector="showGalleryAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTg-Fy-4OM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Mk-DA-rrG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="BYy-Ox-yyT"/>
+                            <constraint firstAttribute="trailing" secondItem="OOE-Gr-vLD" secondAttribute="trailing" constant="16" id="PRK-l8-BpK"/>
+                            <constraint firstItem="OOE-Gr-vLD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Q7N-mc-vJA"/>
+                            <constraint firstItem="OOE-Gr-vLD" firstAttribute="top" secondItem="3Mk-DA-rrG" secondAttribute="bottom" constant="16" id="Rgx-Zt-u0T"/>
+                            <constraint firstItem="3Mk-DA-rrG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kOU-YQ-n2i"/>
+                            <constraint firstItem="l0N-Pz-PUy" firstAttribute="top" secondItem="OOE-Gr-vLD" secondAttribute="bottom" constant="16" id="ur2-cl-0lV"/>
+                            <constraint firstItem="l0N-Pz-PUy" firstAttribute="centerX" secondItem="OOE-Gr-vLD" secondAttribute="centerX" id="x0x-vK-FWn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="OOE-Gr-vLD" id="iM6-JG-EJQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Vh9-sw-YD5">
+                    <connections>
+                        <action selector="tapAction:" destination="BYZ-38-t0r" id="rLw-8Z-y5L"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>

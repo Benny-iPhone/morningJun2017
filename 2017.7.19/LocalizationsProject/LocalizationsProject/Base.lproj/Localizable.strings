@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  LocalizationsProject
+
+  Created by Benny Davidovitz on 19/07/2017.
+  Copyright © 2017 com.hackeru. All rights reserved.
+*/
+
+
+"key" = "value";
+"mainvc_title_label_text" = "hello world";
+"mainvc_second_label_text" = "eyal";
+"mainvc_third_label_text" = "iOS Developer";
