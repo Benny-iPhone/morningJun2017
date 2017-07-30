@@ -1,0 +1,6 @@
+framework module Pods_SDWebImageAnimation {
+  umbrella header "Pods-SDWebImageAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

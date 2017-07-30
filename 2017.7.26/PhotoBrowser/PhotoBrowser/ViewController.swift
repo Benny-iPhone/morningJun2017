@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         }
         
         imageView.sd_setImage(with: url)
+        
     }
     
     @IBAction func tapAction(_ sender: Any) {

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RadioGaga" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" minimumValueImage="icons8-mute" maximumValueImage="icons8-volume_up" translatesAutoresizingMaskIntoConstraints="NO" id="rZm-by-0zB">
+                                <rect key="frame" x="14" y="102" width="347" height="31"/>
+                                <connections>
+                                    <action selector="volumeAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="suZ-N8-pKa"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCH-wW-sD9">
+                                <rect key="frame" x="16" y="36" width="50" height="50"/>
+                                <state key="normal" image="icons8-play_round"/>
+                                <state key="highlighted" image="icons8-circled_play_filled"/>
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sn3-Ji-vBI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1P-s7-vO9">
+                                <rect key="frame" x="309" y="36" width="50" height="50"/>
+                                <state key="normal" image="icons8-circled_pause"/>
+                                <state key="highlighted" image="icons8-circled_pause_filled"/>
+                                <connections>
+                                    <action selector="pauseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jg7-fI-sjx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Playing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ft-4j-jH6">
+                                <rect key="frame" x="143.5" y="51" width="87.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eCH-wW-sD9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="0PB-aH-2S1"/>
+                            <constraint firstItem="6ft-4j-jH6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9a7-O2-dnB"/>
+                            <constraint firstItem="G1P-s7-vO9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="FPu-hw-rbO"/>
+                            <constraint firstAttribute="trailing" secondItem="G1P-s7-vO9" secondAttribute="trailing" constant="16" id="Nna-EV-vaZ"/>
+                            <constraint firstItem="eCH-wW-sD9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="iIu-J2-m9x"/>
+                            <constraint firstItem="6ft-4j-jH6" firstAttribute="centerY" secondItem="eCH-wW-sD9" secondAttribute="centerY" id="nqc-33-kxT"/>
+                            <constraint firstItem="rZm-by-0zB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="qWQ-GA-3M3"/>
+                            <constraint firstAttribute="trailing" secondItem="rZm-by-0zB" secondAttribute="trailing" constant="16" id="vWU-jv-5im"/>
+                            <constraint firstItem="rZm-by-0zB" firstAttribute="top" secondItem="G1P-s7-vO9" secondAttribute="bottom" constant="16" id="ySR-a9-13m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="G1P-s7-vO9" id="uOv-9m-dgH"/>
+                        <outlet property="playButton" destination="eCH-wW-sD9" id="5ey-Mt-AtL"/>
+                        <outlet property="statusLabel" destination="6ft-4j-jH6" id="6Rv-kf-ptQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-circled_pause" width="50" height="50"/>
+        <image name="icons8-circled_pause_filled" width="50" height="50"/>
+        <image name="icons8-circled_play_filled" width="50" height="50"/>
+        <image name="icons8-mute" width="25" height="25"/>
+        <image name="icons8-play_round" width="50" height="50"/>
+        <image name="icons8-volume_up" width="25" height="25"/>
+    </resources>
+</document>
