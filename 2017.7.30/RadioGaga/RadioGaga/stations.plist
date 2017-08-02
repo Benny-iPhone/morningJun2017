@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>רשת גימל</string>
+		<key>url</key>
+		<string>http://ipbc-metadata-rr-d.vidnt.com:8000/ipbc_IPBCgimmelLAM</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>רשת בית</string>
+		<key>url</key>
+		<string>http://ipbc-metadata-rr-d.vidnt.com:8000/ipbc_IPBCbetLAM</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>רדיו 5</string>
+		<key>url</key>
+		<string>http://84.94.229.99:4312/;?1456395499943.mp3</string>
+	</dict>
+</array>
+</plist>

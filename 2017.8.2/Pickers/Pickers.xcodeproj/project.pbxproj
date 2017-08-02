@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2BC0D071F2E0937005D5670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC0D061F2E0937005D5670 /* AppDelegate.swift */; };
-		B2BC0D091F2E0937005D5670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC0D081F2E0937005D5670 /* ViewController.swift */; };
-		B2BC0D0C1F2E0937005D5670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0D0A1F2E0937005D5670 /* Main.storyboard */; };
-		B2BC0D0E1F2E0937005D5670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0D0D1F2E0937005D5670 /* Assets.xcassets */; };
-		B2BC0D111F2E0937005D5670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0D0F1F2E0937005D5670 /* LaunchScreen.storyboard */; };
-		B2C573101F31ED8B004D2B22 /* stations.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2C5730F1F31ED8B004D2B22 /* stations.plist */; };
-		B2C573121F31EF68004D2B22 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C573111F31EF68004D2B22 /* RadioStation.swift */; };
+		B214106B1F31BCB1002EC08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214106A1F31BCB1002EC08B /* AppDelegate.swift */; };
+		B214106D1F31BCB1002EC08B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214106C1F31BCB1002EC08B /* FirstViewController.swift */; };
+		B214106F1F31BCB1002EC08B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214106E1F31BCB1002EC08B /* SecondViewController.swift */; };
+		B21410721F31BCB1002EC08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21410701F31BCB1002EC08B /* Main.storyboard */; };
+		B21410741F31BCB1002EC08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21410731F31BCB1002EC08B /* Assets.xcassets */; };
+		B21410771F31BCB1002EC08B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21410751F31BCB1002EC08B /* LaunchScreen.storyboard */; };
+		B2C5730B1F31D8FA004D2B22 /* MacOSXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5730A1F31D8FA004D2B22 /* MacOSXViewController.swift */; };
+		B2C5730D1F31E427004D2B22 /* NamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5730C1F31E427004D2B22 /* NamesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B2BC0D031F2E0937005D5670 /* RadioGaga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioGaga.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2BC0D061F2E0937005D5670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2BC0D081F2E0937005D5670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2BC0D0B1F2E0937005D5670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B2BC0D0D1F2E0937005D5670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B2BC0D101F2E0937005D5670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B2BC0D121F2E0937005D5670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2C5730F1F31ED8B004D2B22 /* stations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stations.plist; sourceTree = "<group>"; };
-		B2C573111F31EF68004D2B22 /* RadioStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		B21410671F31BCB1002EC08B /* Pickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B214106A1F31BCB1002EC08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B214106C1F31BCB1002EC08B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B214106E1F31BCB1002EC08B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B21410711F31BCB1002EC08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B21410731F31BCB1002EC08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B21410761F31BCB1002EC08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B21410781F31BCB1002EC08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2C5730A1F31D8FA004D2B22 /* MacOSXViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSXViewController.swift; sourceTree = "<group>"; };
+		B2C5730C1F31E427004D2B22 /* NamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B2BC0D001F2E0937005D5670 /* Frameworks */ = {
+		B21410641F31BCB1002EC08B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,88 +41,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B2BC0CFA1F2E0937005D5670 = {
+		B214105E1F31BCB1002EC08B = {
 			isa = PBXGroup;
 			children = (
-				B2BC0D051F2E0937005D5670 /* RadioGaga */,
-				B2BC0D041F2E0937005D5670 /* Products */,
+				B21410691F31BCB1002EC08B /* Pickers */,
+				B21410681F31BCB1002EC08B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B2BC0D041F2E0937005D5670 /* Products */ = {
+		B21410681F31BCB1002EC08B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B2BC0D031F2E0937005D5670 /* RadioGaga.app */,
+				B21410671F31BCB1002EC08B /* Pickers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B2BC0D051F2E0937005D5670 /* RadioGaga */ = {
+		B21410691F31BCB1002EC08B /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
-				B2C5730E1F31EC90004D2B22 /* model */,
-				B2BC0D061F2E0937005D5670 /* AppDelegate.swift */,
-				B2BC0D081F2E0937005D5670 /* ViewController.swift */,
-				B2BC0D0A1F2E0937005D5670 /* Main.storyboard */,
-				B2BC0D0D1F2E0937005D5670 /* Assets.xcassets */,
-				B2BC0D0F1F2E0937005D5670 /* LaunchScreen.storyboard */,
-				B2BC0D121F2E0937005D5670 /* Info.plist */,
+				B214106A1F31BCB1002EC08B /* AppDelegate.swift */,
+				B214106C1F31BCB1002EC08B /* FirstViewController.swift */,
+				B214106E1F31BCB1002EC08B /* SecondViewController.swift */,
+				B2C5730A1F31D8FA004D2B22 /* MacOSXViewController.swift */,
+				B2C5730C1F31E427004D2B22 /* NamesViewController.swift */,
+				B21410701F31BCB1002EC08B /* Main.storyboard */,
+				B21410731F31BCB1002EC08B /* Assets.xcassets */,
+				B21410751F31BCB1002EC08B /* LaunchScreen.storyboard */,
+				B21410781F31BCB1002EC08B /* Info.plist */,
 			);
-			path = RadioGaga;
-			sourceTree = "<group>";
-		};
-		B2C5730E1F31EC90004D2B22 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				B2C5730F1F31ED8B004D2B22 /* stations.plist */,
-				B2C573111F31EF68004D2B22 /* RadioStation.swift */,
-			);
-			name = model;
+			path = Pickers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B2BC0D021F2E0937005D5670 /* RadioGaga */ = {
+		B21410661F31BCB1002EC08B /* Pickers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2BC0D151F2E0937005D5670 /* Build configuration list for PBXNativeTarget "RadioGaga" */;
+			buildConfigurationList = B214107B1F31BCB1002EC08B /* Build configuration list for PBXNativeTarget "Pickers" */;
 			buildPhases = (
-				B2BC0CFF1F2E0937005D5670 /* Sources */,
-				B2BC0D001F2E0937005D5670 /* Frameworks */,
-				B2BC0D011F2E0937005D5670 /* Resources */,
+				B21410631F31BCB1002EC08B /* Sources */,
+				B21410641F31BCB1002EC08B /* Frameworks */,
+				B21410651F31BCB1002EC08B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RadioGaga;
-			productName = RadioGaga;
-			productReference = B2BC0D031F2E0937005D5670 /* RadioGaga.app */;
+			name = Pickers;
+			productName = Pickers;
+			productReference = B21410671F31BCB1002EC08B /* Pickers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B2BC0CFB1F2E0937005D5670 /* Project object */ = {
+		B214105F1F31BCB1002EC08B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = com.hackeru;
 				TargetAttributes = {
-					B2BC0D021F2E0937005D5670 = {
+					B21410661F31BCB1002EC08B = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = J7YZTH9Z4F;
 						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-						};
 					};
 				};
 			};
-			buildConfigurationList = B2BC0CFE1F2E0937005D5670 /* Build configuration list for PBXProject "RadioGaga" */;
+			buildConfigurationList = B21410621F31BCB1002EC08B /* Build configuration list for PBXProject "Pickers" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -128,56 +117,57 @@
 				en,
 				Base,
 			);
-			mainGroup = B2BC0CFA1F2E0937005D5670;
-			productRefGroup = B2BC0D041F2E0937005D5670 /* Products */;
+			mainGroup = B214105E1F31BCB1002EC08B;
+			productRefGroup = B21410681F31BCB1002EC08B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B2BC0D021F2E0937005D5670 /* RadioGaga */,
+				B21410661F31BCB1002EC08B /* Pickers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B2BC0D011F2E0937005D5670 /* Resources */ = {
+		B21410651F31BCB1002EC08B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2BC0D111F2E0937005D5670 /* LaunchScreen.storyboard in Resources */,
-				B2C573101F31ED8B004D2B22 /* stations.plist in Resources */,
-				B2BC0D0E1F2E0937005D5670 /* Assets.xcassets in Resources */,
-				B2BC0D0C1F2E0937005D5670 /* Main.storyboard in Resources */,
+				B21410771F31BCB1002EC08B /* LaunchScreen.storyboard in Resources */,
+				B21410741F31BCB1002EC08B /* Assets.xcassets in Resources */,
+				B21410721F31BCB1002EC08B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B2BC0CFF1F2E0937005D5670 /* Sources */ = {
+		B21410631F31BCB1002EC08B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2BC0D091F2E0937005D5670 /* ViewController.swift in Sources */,
-				B2BC0D071F2E0937005D5670 /* AppDelegate.swift in Sources */,
-				B2C573121F31EF68004D2B22 /* RadioStation.swift in Sources */,
+				B214106F1F31BCB1002EC08B /* SecondViewController.swift in Sources */,
+				B214106B1F31BCB1002EC08B /* AppDelegate.swift in Sources */,
+				B214106D1F31BCB1002EC08B /* FirstViewController.swift in Sources */,
+				B2C5730B1F31D8FA004D2B22 /* MacOSXViewController.swift in Sources */,
+				B2C5730D1F31E427004D2B22 /* NamesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B2BC0D0A1F2E0937005D5670 /* Main.storyboard */ = {
+		B21410701F31BCB1002EC08B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B2BC0D0B1F2E0937005D5670 /* Base */,
+				B21410711F31BCB1002EC08B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B2BC0D0F1F2E0937005D5670 /* LaunchScreen.storyboard */ = {
+		B21410751F31BCB1002EC08B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B2BC0D101F2E0937005D5670 /* Base */,
+				B21410761F31BCB1002EC08B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -185,7 +175,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B2BC0D131F2E0937005D5670 /* Debug */ = {
+		B21410791F31BCB1002EC08B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +225,7 @@
 			};
 			name = Debug;
 		};
-		B2BC0D141F2E0937005D5670 /* Release */ = {
+		B214107A1F31BCB1002EC08B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,27 +268,25 @@
 			};
 			name = Release;
 		};
-		B2BC0D161F2E0937005D5670 /* Debug */ = {
+		B214107C1F31BCB1002EC08B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J7YZTH9Z4F;
-				INFOPLIST_FILE = RadioGaga/Info.plist;
+				INFOPLIST_FILE = Pickers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.RadioGaga;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.Pickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		B2BC0D171F2E0937005D5670 /* Release */ = {
+		B214107D1F31BCB1002EC08B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J7YZTH9Z4F;
-				INFOPLIST_FILE = RadioGaga/Info.plist;
+				INFOPLIST_FILE = Pickers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.RadioGaga;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.Pickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -307,25 +295,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B2BC0CFE1F2E0937005D5670 /* Build configuration list for PBXProject "RadioGaga" */ = {
+		B21410621F31BCB1002EC08B /* Build configuration list for PBXProject "Pickers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2BC0D131F2E0937005D5670 /* Debug */,
-				B2BC0D141F2E0937005D5670 /* Release */,
+				B21410791F31BCB1002EC08B /* Debug */,
+				B214107A1F31BCB1002EC08B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2BC0D151F2E0937005D5670 /* Build configuration list for PBXNativeTarget "RadioGaga" */ = {
+		B214107B1F31BCB1002EC08B /* Build configuration list for PBXNativeTarget "Pickers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2BC0D161F2E0937005D5670 /* Debug */,
-				B2BC0D171F2E0937005D5670 /* Release */,
+				B214107C1F31BCB1002EC08B /* Debug */,
+				B214107D1F31BCB1002EC08B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B2BC0CFB1F2E0937005D5670 /* Project object */;
+	rootObject = B214105F1F31BCB1002EC08B /* Project object */;
 }

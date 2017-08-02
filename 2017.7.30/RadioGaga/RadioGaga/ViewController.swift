@@ -16,17 +16,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
 
+    let pickerArray : [RadioStation]
+    var currentStation : RadioStation?{
+        didSet{
+            if let url = currentStation?.url{
+                player = AVPlayer(url: url)
+                
+                playButton.isEnabled = true
+                pauseButton.isEnabled = false
+            }
+        }
+    }
     var player : AVPlayer?
+    
+    required init?(coder aDecoder: NSCoder) {
+        pickerArray = RadioStation.readFile()
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         pauseButton.isEnabled = false
-        
-        let urlString = "http://bigrradio.cdnstream1.com/5132_128"
-        if let url = URL(string: urlString){
-            player = AVPlayer(url: url)
-        }
+
+        self.currentStation = pickerArray.first
         
         try? AVAudioSession.sharedInstance().setActive(true)
         try? AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -68,6 +81,47 @@ class ViewController: UIViewController {
     }
 
 }
+
+extension ViewController : UIPickerViewDataSource, UIPickerViewDelegate{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerArray.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerArray[row].name
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.currentStation = pickerArray[row]
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
