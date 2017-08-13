@@ -16,6 +16,7 @@
 		B2C818771F3B29F20012F641 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C818761F3B29F20012F641 /* PersonViewController.swift */; };
 		B2C818791F3B360B0012F641 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C818781F3B360B0012F641 /* PeopleTableViewController.swift */; };
 		B2C8187C1F3B36510012F641 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C8187B1F3B36510012F641 /* PersonCell.swift */; };
+		B2C819061F4031D40012F641 /* Person+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C819051F4031D40012F641 /* Person+utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B2C818761F3B29F20012F641 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		B2C818781F3B360B0012F641 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
 		B2C8187B1F3B36510012F641 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		B2C819051F4031D40012F641 /* Person+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				B2C818731F3B21C70012F641 /* DBManager.swift */,
+				B2C819051F4031D40012F641 /* Person+utils.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				B2C818661F3B1E0A0012F641 /* HitListCoreData.xcdatamodeld in Sources */,
 				B2C818741F3B21C70012F641 /* DBManager.swift in Sources */,
 				B2C818771F3B29F20012F641 /* PersonViewController.swift in Sources */,
+				B2C819061F4031D40012F641 /* Person+utils.swift in Sources */,
 				B2C818791F3B360B0012F641 /* PeopleTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +343,7 @@
 				B2C818711F3B1E0B0012F641 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

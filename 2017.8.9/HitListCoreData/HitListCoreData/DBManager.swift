@@ -23,11 +23,20 @@ class DBManager: NSObject {
         let request : NSFetchRequest<Person> = Person.fetchRequest()
         
         let sortFirstName = NSSortDescriptor(key: "firstName", ascending: true)
-        let sortLastName = NSSortDescriptor(key: "lastName", ascending: true)
+        //let sortLastName = NSSortDescriptor(key: "lastName", ascending: true)
+        let sortLastName = NSSortDescriptor(key: "lastName", ascending: true, selector: #selector(NSString.caseInsensitiveCompare(_:)))
+        
         
         request.sortDescriptors = [sortLastName,sortFirstName]
         
-        let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: self.context, sectionNameKeyPath: "lastName", cacheName: nil)
+        if var filter = filter, !filter.isEmpty{
+            filter = filter.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+            
+            let predicate = NSPredicate(format: "firstName CONTAINS[cd] %@ OR lastName CONTAINS[cd] %@", filter,filter)
+            request.predicate = predicate
+        }
+        
+        let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: self.context, sectionNameKeyPath: "surnameInitial", cacheName: nil)
         
         try? controller.performFetch()
         
