@@ -7,6 +7,7 @@
 //
 
 import Firebase
+import JSQMessagesViewController
 
 class DBManager{
     static let manager = DBManager()
@@ -56,6 +57,46 @@ class DBManager{
         roomsRef.observe(.childRemoved) { (snapshot : DataSnapshot) in
             completion(snapshot.key)
         }
+    }
+    
+    //MARK: - Messages
+    func createMessage(with text : String, room : Room){
+        guard let uid = Auth.auth().currentUser?.uid else {
+            return
+        }
+        
+        let dict : [String:Any] = [
+            "sender":uid,
+            "date":Date().timeIntervalSince1970,
+            "text":text,
+            "name":Auth.auth().currentUser?.displayName ?? ""
+        ]
+        
+        messagesRef.child(room.id).childByAutoId().setValue(dict)
+        
+        
+    }
+    
+    func observeNewMessage(by room : Room, completion : @escaping (JSQMessage)->Void){
+        
+        messagesRef.child(room.id).observe(.childAdded, with: { (snapshot) in
+            guard let dict = snapshot.value as? [String:Any] else{
+                return
+            }
+            
+            let senderId = dict["sender"] as? String ?? ""
+            let name = dict["name"] as? String ?? ""
+            let timestamp = dict["date"] as? TimeInterval ?? 0
+            let date = Date(timeIntervalSince1970: timestamp)
+            let text = dict["text"] as? String ?? ""
+            
+            guard let msg = JSQMessage(senderId: senderId, senderDisplayName: name, date: date, text: text) else{
+                return
+            }
+            
+            completion(msg)
+        })
+        
     }
 }
 

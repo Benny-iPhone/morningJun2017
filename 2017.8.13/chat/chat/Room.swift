@@ -8,18 +8,7 @@
 
 import Firebase
 
-extension Date{
-    var toString : String{
-        get{
-            let formatter = DateFormatter()
-            formatter.dateStyle = .medium
-            formatter.timeStyle = .medium
-            formatter.doesRelativeDateFormatting = true
-            
-            return formatter.string(from: self)
-        }
-    }
-}
+
 
 class Room{
     let id : String

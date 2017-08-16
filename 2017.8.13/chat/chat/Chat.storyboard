@@ -48,6 +48,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xmJ-Ak-kTm" kind="show" id="61S-pf-y2m"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -77,6 +80,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsp-gl-P4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1060" y="195.6521739130435"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="WIv-n6-VOz">
+            <objects>
+                <viewController id="xmJ-Ak-kTm" customClass="ChatViewController" customModule="chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5y3-CB-hbf"/>
+                        <viewControllerLayoutGuide type="bottom" id="6aq-93-UfH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3XZ-4B-aeB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEC-yO-f9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="196"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="71l-Ff-wHn">

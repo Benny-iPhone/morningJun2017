@@ -94,6 +94,20 @@ class RoomsViewController: UIViewController , UITableViewDataSource{
         DBManager.manager.deleteRoom(tableArray[indexPath.row])
     }
     
+    //MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //making sure we are going now to chat screen, from a cell, and the tableview knowns its index path
+        //using indexPath we can extract the Room object and set it to the coming chatVC instance
+        if let chatVC = segue.destination as? ChatViewController,
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell){
+            
+            chatVC.room = tableArray[indexPath.row]
+            
+        }
+    }
     
 }
 

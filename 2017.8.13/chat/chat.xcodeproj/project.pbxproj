@@ -22,6 +22,8 @@
 		B2C819381F4072960012F641 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C819371F4072960012F641 /* DBManager.swift */; };
 		B2C8193A1F4075990012F641 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C819391F4075990012F641 /* RoomsViewController.swift */; };
 		B2C8193C1F407B740012F641 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C8193B1F407B730012F641 /* Room.swift */; };
+		B2C819871F4420810012F641 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C819861F4420810012F641 /* ChatViewController.swift */; };
+		B2C819891F4444CA0012F641 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C819881F4444CA0012F641 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		B2C819371F4072960012F641 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		B2C819391F4075990012F641 /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		B2C8193B1F407B730012F641 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		B2C819861F4420810012F641 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B2C819881F4444CA0012F641 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CEADAFA721FF87343D50D2E1 /* Pods-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chat/Pods-chat.debug.xcconfig"; sourceTree = "<group>"; };
 		EB7ABA9F91DD7D21C9DDA46C /* Pods_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +122,7 @@
 				B2C819321F4066230012F641 /* SignInViewController.swift */,
 				B2C819341F40662D0012F641 /* SignUpViewController.swift */,
 				B2C819391F4075990012F641 /* RoomsViewController.swift */,
+				B2C819861F4420810012F641 /* ChatViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			children = (
 				B2C819371F4072960012F641 /* DBManager.swift */,
 				B2C8193B1F407B730012F641 /* Room.swift */,
+				B2C819881F4444CA0012F641 /* Utils.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 				B2C8193C1F407B740012F641 /* Room.swift in Sources */,
 				B2C819161F4043B10012F641 /* ViewController.swift in Sources */,
 				B2C8193A1F4075990012F641 /* RoomsViewController.swift in Sources */,
+				B2C819891F4444CA0012F641 /* Utils.swift in Sources */,
 				B2C819141F4043B10012F641 /* AppDelegate.swift in Sources */,
 				B2C819311F4061E00012F641 /* FlowController.swift in Sources */,
+				B2C819871F4420810012F641 /* ChatViewController.swift in Sources */,
 				B2C819351F40662D0012F641 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
