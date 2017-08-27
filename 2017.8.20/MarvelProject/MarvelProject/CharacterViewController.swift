@@ -11,6 +11,7 @@ import SDWebImage
 
 class CharacterViewController: UIViewController {
 
+    @IBOutlet weak var textViewTopLayout: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
     var tableArray : [Comic] = []
     
@@ -20,6 +21,8 @@ class CharacterViewController: UIViewController {
     @IBOutlet weak var descTextView: UITextView!
     @IBOutlet weak var bgImageView: UIImageView!
     
+    var defaultTop : CGFloat = 0
+    var defaultOffset : CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,10 @@ class CharacterViewController: UIViewController {
             textViewHeightLayout.constant = 0
         }
         
-        tableView.contentInset = UIEdgeInsets(top: 32 + textViewHeightLayout.constant, left: 0, bottom: 0, right: 0)
+        defaultTop = textViewTopLayout.constant
+        defaultOffset = defaultTop * 2 + textViewHeightLayout.constant
+        
+        tableView.contentInset = UIEdgeInsets(top: defaultOffset, left: 0, bottom: 0, right: 0)
         
         navigationItem.title = char.name
         descTextView.text = char.desc
@@ -58,30 +64,43 @@ class CharacterViewController: UIViewController {
 extension CharacterViewController : UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableArray.count
+        return 1 + tableArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let isTitle = indexPath.row == 0
+        let identifier = isTitle ? "title_cell" : "cell"
         
-        let comic : Comic = tableArray[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         
         let label = cell.viewWithTag(1) as? UILabel
-        label?.text = comic.title
-        label?.textColor = .red
-        //cell.textLabel?.text = comic.title
-        cell.accessoryType = comic.purchaseUrl == nil ? .none : .disclosureIndicator
-        
-        cell.backgroundColor = UIColor.white.withAlphaComponent(0.6)
-        
+        if isTitle{
+            
+            label?.text = "Comics"
+            
+        } else {
+            
+            let comic : Comic = tableArray[indexPath.row - 1]
+            
+            label?.text = comic.title
+            label?.textColor = .red
+            //cell.textLabel?.text = comic.title
+            cell.accessoryType = comic.purchaseUrl == nil ? .none : .disclosureIndicator
+            
+        }
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        let comic : Comic = tableArray[indexPath.row]
+        let row = indexPath.row - 1
+        guard row >= 0 , row < tableArray.count else{
+            return
+        }
+        
+        let comic : Comic = tableArray[row]
 
         guard let url = comic.purchaseUrl else{
             return
@@ -96,6 +115,23 @@ extension CharacterViewController : UITableViewDataSource, UITableViewDelegate{
         navigationController?.show(webVC, sender: nil)
         //navigationController?.pushViewController(webVC, animated: true)
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        var y = scrollView.contentOffset.y
+        y = min(y, 0)
+        
+        let delta = max(abs(defaultOffset) - abs(y),0)
+        
+        textViewTopLayout.constant = defaultTop - delta
+        
+        
+        
+        print("y: \(scrollView.contentOffset.y)")
+        print("delta :\(delta)")
+
+    }
+    
 }
 
 

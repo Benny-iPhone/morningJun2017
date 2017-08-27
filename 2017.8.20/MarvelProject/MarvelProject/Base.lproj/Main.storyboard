@@ -165,7 +165,27 @@
                                                 <constraint firstItem="C9U-HC-PEB" firstAttribute="leading" secondItem="iSu-az-4oW" secondAttribute="leading" constant="16" id="bra-fF-qlD"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="title_cell" id="OJ1-xj-oow">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OJ1-xj-oow" id="zFV-25-dDm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VQ-ev-Eec">
+                                                    <rect key="frame" x="147" y="3.5" width="81" height="38.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7VQ-ev-Eec" firstAttribute="centerY" secondItem="zFV-25-dDm" secondAttribute="centerY" id="GUT-J7-k3R"/>
+                                                <constraint firstItem="7VQ-ev-Eec" firstAttribute="centerX" secondItem="zFV-25-dDm" secondAttribute="centerX" id="mKI-vt-1We"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -194,6 +214,7 @@
                         <outlet property="descTextView" destination="o3e-rB-2t0" id="GaS-4N-hcV"/>
                         <outlet property="tableView" destination="Ifw-WK-kRe" id="3tC-qa-yXK"/>
                         <outlet property="textViewHeightLayout" destination="GTh-BQ-oMb" id="oaP-N1-XrV"/>
+                        <outlet property="textViewTopLayout" destination="Dnp-H6-dBc" id="hcf-lQ-ccY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJK-NU-Swq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -238,7 +259,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2wu-7d-ah8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="A79-nM-Pov">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A79-nM-Pov">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
